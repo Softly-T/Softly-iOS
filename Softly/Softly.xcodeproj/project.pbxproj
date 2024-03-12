@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E897F1EC2BA01ECF002395F4 /* SoftlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897F1EB2BA01ECF002395F4 /* SoftlyApp.swift */; };
+		E897F1F02BA01ECF002395F4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897F1EF2BA01ECF002395F4 /* Item.swift */; };
+		E897F1F22BA01ED0002395F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E897F1F12BA01ED0002395F4 /* Assets.xcassets */; };
+		E897F1F52BA01ED0002395F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E897F1F42BA01ED0002395F4 /* Preview Assets.xcassets */; };
+		E897F21B2BA01F0F002395F4 /* SpoqaHanSansNeo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E897F21A2BA01F0F002395F4 /* SpoqaHanSansNeo-Bold.otf */; };
+		E897F21D2BA01F1A002395F4 /* SpoqaHanSansNeo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E897F21C2BA01F1A002395F4 /* SpoqaHanSansNeo-Regular.otf */; };
+		E897F2212BA01F86002395F4 /* SoftlyFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897F2202BA01F86002395F4 /* SoftlyFont.swift */; };
+		E897F2232BA01FA5002395F4 /* SoftlyFontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897F2222BA01FA5002395F4 /* SoftlyFontStyle.swift */; };
+		E897F2272BA01FD4002395F4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897F2262BA01FD4002395F4 /* HomeView.swift */; };
+		E897F2292BA01FDA002395F4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897F2282BA01FDA002395F4 /* HomeViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E897F1FB2BA01ED0002395F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E897F1E02BA01ECF002395F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E897F1E72BA01ECF002395F4;
+			remoteInfo = Softly;
+		};
+		E897F2052BA01ED0002395F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E897F1E02BA01ECF002395F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E897F1E72BA01ECF002395F4;
+			remoteInfo = Softly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E897F1E82BA01ECF002395F4 /* Softly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Softly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E897F1EB2BA01ECF002395F4 /* SoftlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftlyApp.swift; sourceTree = "<group>"; };
+		E897F1EF2BA01ECF002395F4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E897F1F12BA01ED0002395F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E897F1F42BA01ED0002395F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E897F1FA2BA01ED0002395F4 /* SoftlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E897F2042BA01ED0002395F4 /* SoftlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E897F21A2BA01F0F002395F4 /* SpoqaHanSansNeo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.otf"; sourceTree = "<group>"; };
+		E897F21C2BA01F1A002395F4 /* SpoqaHanSansNeo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.otf"; sourceTree = "<group>"; };
+		E897F21E2BA01F2B002395F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E897F2202BA01F86002395F4 /* SoftlyFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftlyFont.swift; sourceTree = "<group>"; };
+		E897F2222BA01FA5002395F4 /* SoftlyFontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftlyFontStyle.swift; sourceTree = "<group>"; };
+		E897F2262BA01FD4002395F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E897F2282BA01FDA002395F4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E897F1E52BA01ECF002395F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E897F1F72BA01ED0002395F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E897F2012BA01ED0002395F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E897F1DF2BA01ECF002395F4 = {
+			isa = PBXGroup;
+			children = (
+				E897F1EA2BA01ECF002395F4 /* Softly */,
+				E897F1E92BA01ECF002395F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E897F1E92BA01ECF002395F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E897F1E82BA01ECF002395F4 /* Softly.app */,
+				E897F1FA2BA01ED0002395F4 /* SoftlyTests.xctest */,
+				E897F2042BA01ED0002395F4 /* SoftlyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E897F1EA2BA01ECF002395F4 /* Softly */ = {
+			isa = PBXGroup;
+			children = (
+				E897F21E2BA01F2B002395F4 /* Info.plist */,
+				E897F2182BA01EFB002395F4 /* Sources */,
+				E897F2172BA01EF1002395F4 /* Resources */,
+				E897F1EB2BA01ECF002395F4 /* SoftlyApp.swift */,
+				E897F1EF2BA01ECF002395F4 /* Item.swift */,
+				E897F1F12BA01ED0002395F4 /* Assets.xcassets */,
+				E897F1F32BA01ED0002395F4 /* Preview Content */,
+			);
+			path = Softly;
+			sourceTree = "<group>";
+		};
+		E897F1F32BA01ED0002395F4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E897F1F42BA01ED0002395F4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E897F2172BA01EF1002395F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E897F2192BA01F00002395F4 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E897F2182BA01EFB002395F4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E897F2242BA01FC8002395F4 /* Scene */,
+				E897F21F2BA01F70002395F4 /* DesignSystem */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E897F2192BA01F00002395F4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E897F21A2BA01F0F002395F4 /* SpoqaHanSansNeo-Bold.otf */,
+				E897F21C2BA01F1A002395F4 /* SpoqaHanSansNeo-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E897F21F2BA01F70002395F4 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				E897F2202BA01F86002395F4 /* SoftlyFont.swift */,
+				E897F2222BA01FA5002395F4 /* SoftlyFontStyle.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		E897F2242BA01FC8002395F4 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E897F2252BA01FCC002395F4 /* Home */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		E897F2252BA01FCC002395F4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E897F2262BA01FD4002395F4 /* HomeView.swift */,
+				E897F2282BA01FDA002395F4 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E897F1E72BA01ECF002395F4 /* Softly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E897F20E2BA01ED0002395F4 /* Build configuration list for PBXNativeTarget "Softly" */;
+			buildPhases = (
+				E897F1E42BA01ECF002395F4 /* Sources */,
+				E897F1E52BA01ECF002395F4 /* Frameworks */,
+				E897F1E62BA01ECF002395F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Softly;
+			productName = Softly;
+			productReference = E897F1E82BA01ECF002395F4 /* Softly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E897F1F92BA01ED0002395F4 /* SoftlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E897F2112BA01ED0002395F4 /* Build configuration list for PBXNativeTarget "SoftlyTests" */;
+			buildPhases = (
+				E897F1F62BA01ED0002395F4 /* Sources */,
+				E897F1F72BA01ED0002395F4 /* Frameworks */,
+				E897F1F82BA01ED0002395F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E897F1FC2BA01ED0002395F4 /* PBXTargetDependency */,
+			);
+			name = SoftlyTests;
+			productName = SoftlyTests;
+			productReference = E897F1FA2BA01ED0002395F4 /* SoftlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E897F2032BA01ED0002395F4 /* SoftlyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E897F2142BA01ED0002395F4 /* Build configuration list for PBXNativeTarget "SoftlyUITests" */;
+			buildPhases = (
+				E897F2002BA01ED0002395F4 /* Sources */,
+				E897F2012BA01ED0002395F4 /* Frameworks */,
+				E897F2022BA01ED0002395F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E897F2062BA01ED0002395F4 /* PBXTargetDependency */,
+			);
+			name = SoftlyUITests;
+			productName = SoftlyUITests;
+			productReference = E897F2042BA01ED0002395F4 /* SoftlyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E897F1E02BA01ECF002395F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					E897F1E72BA01ECF002395F4 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					E897F1F92BA01ED0002395F4 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E897F1E72BA01ECF002395F4;
+					};
+					E897F2032BA01ED0002395F4 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E897F1E72BA01ECF002395F4;
+					};
+				};
+			};
+			buildConfigurationList = E897F1E32BA01ECF002395F4 /* Build configuration list for PBXProject "Softly" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E897F1DF2BA01ECF002395F4;
+			productRefGroup = E897F1E92BA01ECF002395F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E897F1E72BA01ECF002395F4 /* Softly */,
+				E897F1F92BA01ED0002395F4 /* SoftlyTests */,
+				E897F2032BA01ED0002395F4 /* SoftlyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E897F1E62BA01ECF002395F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E897F21B2BA01F0F002395F4 /* SpoqaHanSansNeo-Bold.otf in Resources */,
+				E897F1F52BA01ED0002395F4 /* Preview Assets.xcassets in Resources */,
+				E897F1F22BA01ED0002395F4 /* Assets.xcassets in Resources */,
+				E897F21D2BA01F1A002395F4 /* SpoqaHanSansNeo-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E897F1F82BA01ED0002395F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E897F2022BA01ED0002395F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E897F1E42BA01ECF002395F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E897F1F02BA01ECF002395F4 /* Item.swift in Sources */,
+				E897F2292BA01FDA002395F4 /* HomeViewModel.swift in Sources */,
+				E897F1EC2BA01ECF002395F4 /* SoftlyApp.swift in Sources */,
+				E897F2272BA01FD4002395F4 /* HomeView.swift in Sources */,
+				E897F2232BA01FA5002395F4 /* SoftlyFontStyle.swift in Sources */,
+				E897F2212BA01F86002395F4 /* SoftlyFont.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E897F1F62BA01ED0002395F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E897F2002BA01ED0002395F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E897F1FC2BA01ED0002395F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E897F1E72BA01ECF002395F4 /* Softly */;
+			targetProxy = E897F1FB2BA01ED0002395F4 /* PBXContainerItemProxy */;
+		};
+		E897F2062BA01ED0002395F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E897F1E72BA01ECF002395F4 /* Softly */;
+			targetProxy = E897F2052BA01ED0002395F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E897F20C2BA01ED0002395F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E897F20D2BA01ED0002395F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E897F20F2BA01ED0002395F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Softly/Preview Content\"";
+				DEVELOPMENT_TEAM = Y774295X22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Softly/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BSSM.Softly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E897F2102BA01ED0002395F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Softly/Preview Content\"";
+				DEVELOPMENT_TEAM = Y774295X22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Softly/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BSSM.Softly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E897F2122BA01ED0002395F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y774295X22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BSSM.SoftlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Softly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Softly";
+			};
+			name = Debug;
+		};
+		E897F2132BA01ED0002395F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y774295X22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BSSM.SoftlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Softly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Softly";
+			};
+			name = Release;
+		};
+		E897F2152BA01ED0002395F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y774295X22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BSSM.SoftlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Softly;
+			};
+			name = Debug;
+		};
+		E897F2162BA01ED0002395F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y774295X22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BSSM.SoftlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Softly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E897F1E32BA01ECF002395F4 /* Build configuration list for PBXProject "Softly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E897F20C2BA01ED0002395F4 /* Debug */,
+				E897F20D2BA01ED0002395F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E897F20E2BA01ED0002395F4 /* Build configuration list for PBXNativeTarget "Softly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E897F20F2BA01ED0002395F4 /* Debug */,
+				E897F2102BA01ED0002395F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E897F2112BA01ED0002395F4 /* Build configuration list for PBXNativeTarget "SoftlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E897F2122BA01ED0002395F4 /* Debug */,
+				E897F2132BA01ED0002395F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E897F2142BA01ED0002395F4 /* Build configuration list for PBXNativeTarget "SoftlyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E897F2152BA01ED0002395F4 /* Debug */,
+				E897F2162BA01ED0002395F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E897F1E02BA01ECF002395F4 /* Project object */;
+}
