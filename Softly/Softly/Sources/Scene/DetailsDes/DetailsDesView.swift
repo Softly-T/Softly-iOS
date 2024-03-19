@@ -22,11 +22,8 @@ struct DetailsDesView: View {
     @State var popupreporttext: Array = ["성적인 컨텐츠","상업적인 의도가 다분한 컨텐츠","도배된 컨텐츠","증오 또는 혐오 표현이 담긴 컨텐츠","위험을 조장하는 컨텐츠","사기 또는 거짓 사실이 담긴 컨텐츠"]
     @State var popupreportsubmission : Bool = false
     
-    
     var body: some View {
-        
         NavigationView {
-            
             GeometryReader { geometry in
                 VStack(spacing: 0) {
                     HStack(spacing: 0) {
@@ -70,9 +67,9 @@ struct DetailsDesView: View {
                             Button {
                                 popupfirst.toggle()
                             }label: {
-                                Image("point")
-                                    .padding(.top, 35)
-                                    .padding(.leading, 305)
+                                Image("pointgray")
+                                    .padding(.top, 24)
+                                    .padding(.leading, 293)
                             }
                             
                             Text("{제목}")
@@ -84,11 +81,13 @@ struct DetailsDesView: View {
                                 Text("{아이디}")
                                     .SoftlyFont(.p2, color: .primary900)
                                     .padding(.leading, 8)
-                            }.padding(.leading, 16)
-                                .padding(.top, 355)
+                            }
+                            .padding(.leading, 16)
+                            .padding(.top, 355)
                             
                             
-                        }.padding(.top, 24)
+                        }
+                        .padding(.top, 24)
                         
                         
                         Text("{이번 물건 소개의 컨셉 or 자기 소개}")
@@ -150,9 +149,15 @@ struct DetailsDesView: View {
                                             .SoftlyFont(.h4)
                                         
                                         Spacer()
-                                        Image("linkimg")
-                                            .padding(.top, 5)
-                                            .padding(.trailing, 12)
+                                        Button {
+                                            popupsharing.toggle()
+                                        }label: {
+                                            Image("linkimg")
+                                                .padding(.top, 5)
+                                                .padding(.trailing, 12)
+                                        }
+                                        
+                                            
                                         Image(heartList[selectedIndex])
                                             .onTapGesture {
                                                 selectedIndex = selectedIndex == 0 ? 1 : 0
@@ -382,23 +387,18 @@ struct DetailsDesView: View {
                 }
                 .popup(isPresented: $popupreportsubmission) {
                         VStack(alignment: .leading, spacing: 0){
-                            Text("신고")
-                                .SoftlyFont(.h4, color: .gray900)
+                            Text("이 타래를 신고하시겠어요?")
+                                .SoftlyFont(.p2, color: .gray900)
                                 .padding(.top, 24)
-                            Text("정말 신고하시겠어요?")
-                                .SoftlyFont(.p2, color: .gray300)
-                                .padding(.top, 8)
                             
                             HStack(spacing: 0) {
                                 Spacer()
                                 Button {
                                     popupreportsubmission.toggle()
-                                    popupreport.toggle()
-                                    popupfirst.toggle()
                                 }label: {
                                     Text("취소")
                                         .SoftlyFont(.p2, color: .gray200)
-                                        .padding(.trailing, 16)
+                                        .padding(.trailing, 36)
                                 }
                                 
                                 Button {
@@ -412,13 +412,13 @@ struct DetailsDesView: View {
                                 }
                                 
                             }
-                            .padding(.top, 43)
+                            .padding(.top, 38)
                             
                             Spacer()
                     }
                     .padding(.leading, 20)
                     .background(Color.white)
-                    .frame(width: 354,height: 149)
+                    .frame(width: 280,height: 116)
                     .cornerRadius(8)
                     
                 } customize: {

@@ -109,7 +109,6 @@
 			children = (
 				E897F21E2BA01F2B002395F4 /* Info.plist */,
 				E897F2182BA01EFB002395F4 /* Sources */,
-				E897F2172BA01EF1002395F4 /* Resources */,
 				E897F1EB2BA01ECF002395F4 /* SoftlyApp.swift */,
 				E897F1EF2BA01ECF002395F4 /* Item.swift */,
 				E897F1F12BA01ED0002395F4 /* Assets.xcassets */,
@@ -155,6 +154,7 @@
 		E897F21F2BA01F70002395F4 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				E897F2172BA01EF1002395F4 /* Resources */,
 				E897F2202BA01F86002395F4 /* SoftlyFont.swift */,
 				E897F2222BA01FA5002395F4 /* SoftlyFontStyle.swift */,
 			);
@@ -496,7 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Softly/Preview Content\"";
-				DEVELOPMENT_TEAM = Y774295X22;
+				DEVELOPMENT_TEAM = 7DAQAFQ2TX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Softly/Info.plist;
@@ -527,7 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Softly/Preview Content\"";
-				DEVELOPMENT_TEAM = Y774295X22;
+				DEVELOPMENT_TEAM = 7DAQAFQ2TX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Softly/Info.plist;
