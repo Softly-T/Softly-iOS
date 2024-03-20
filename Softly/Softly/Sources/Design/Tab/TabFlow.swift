@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+public enum TabFlow: Int {
+    case homeimg
+    case searchimg
+    case make
+    case heartimg
+    case profile
+}

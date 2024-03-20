@@ -25,7 +25,7 @@ struct SoftlyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            DetailsDesView()
+            MainTabView()
         }
         .modelContainer(sharedModelContainer)
     }

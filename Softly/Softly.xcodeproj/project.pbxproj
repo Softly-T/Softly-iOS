@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E896273A2BAB16CD00189888 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89627392BAB16CD00189888 /* MainTabView.swift */; };
+		E896273F2BAB16FC00189888 /* TabFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E896273E2BAB16FC00189888 /* TabFlow.swift */; };
+		E89627412BAB170F00189888 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89627402BAB170F00189888 /* ArrowView.swift */; };
 		E897F1EC2BA01ECF002395F4 /* SoftlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897F1EB2BA01ECF002395F4 /* SoftlyApp.swift */; };
 		E897F1F02BA01ECF002395F4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897F1EF2BA01ECF002395F4 /* Item.swift */; };
 		E897F1F22BA01ED0002395F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E897F1F12BA01ED0002395F4 /* Assets.xcassets */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E89627392BAB16CD00189888 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		E896273E2BAB16FC00189888 /* TabFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabFlow.swift; sourceTree = "<group>"; };
+		E89627402BAB170F00189888 /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
 		E897F1E82BA01ECF002395F4 /* Softly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Softly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E897F1EB2BA01ECF002395F4 /* SoftlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftlyApp.swift; sourceTree = "<group>"; };
 		E897F1EF2BA01ECF002395F4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -86,6 +92,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E89627382BAB16C100189888 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E89627392BAB16CD00189888 /* MainTabView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E896273B2BAB16E700189888 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				E896273D2BAB16F000189888 /* Tab */,
+				E896273C2BAB16EC00189888 /* Arrow */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		E896273C2BAB16EC00189888 /* Arrow */ = {
+			isa = PBXGroup;
+			children = (
+				E89627402BAB170F00189888 /* ArrowView.swift */,
+			);
+			path = Arrow;
+			sourceTree = "<group>";
+		};
+		E896273D2BAB16F000189888 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				E896273E2BAB16FC00189888 /* TabFlow.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
 		E897F1DF2BA01ECF002395F4 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +175,7 @@
 		E897F2182BA01EFB002395F4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E896273B2BAB16E700189888 /* Design */,
 				E897F2242BA01FC8002395F4 /* Scene */,
 				E897F21F2BA01F70002395F4 /* DesignSystem */,
 			);
@@ -164,6 +204,7 @@
 		E897F2242BA01FC8002395F4 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				E89627382BAB16C100189888 /* Main */,
 				EA60BAC62BA2D06B00D66CE3 /* DetailsDes */,
 				E897F2252BA01FCC002395F4 /* Home */,
 			);
@@ -330,8 +371,11 @@
 			files = (
 				E897F1F02BA01ECF002395F4 /* Item.swift in Sources */,
 				E897F2292BA01FDA002395F4 /* HomeViewModel.swift in Sources */,
+				E896273A2BAB16CD00189888 /* MainTabView.swift in Sources */,
 				EA60BACA2BA2D0D700D66CE3 /* DetailsDesViewModel.swift in Sources */,
 				E897F1EC2BA01ECF002395F4 /* SoftlyApp.swift in Sources */,
+				E896273F2BAB16FC00189888 /* TabFlow.swift in Sources */,
+				E89627412BAB170F00189888 /* ArrowView.swift in Sources */,
 				E897F2272BA01FD4002395F4 /* HomeView.swift in Sources */,
 				E897F2232BA01FA5002395F4 /* SoftlyFontStyle.swift in Sources */,
 				E897F2212BA01F86002395F4 /* SoftlyFont.swift in Sources */,
