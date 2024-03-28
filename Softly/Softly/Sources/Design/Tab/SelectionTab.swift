@@ -1,18 +1,12 @@
-//
-//  SelectionTab.swift
-//  Softly
-//
-//  Created by 노가현 on 3/26/24.
-//
-
 import SwiftUI
 
-struct SelectionTab: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct SelectionTabbKey: EnvironmentKey {
+    static var defaultValue: Binding<TabFlow> = .constant(.homeimg)
 }
 
-#Preview {
-    SelectionTab()
+public extension EnvironmentValues {
+    var selectionTabbKey: Binding<TabFlow> {
+        get { self[SelectionTabbKey.self] }
+        set { self[SelectionTabbKey.self] = newValue }
+    }
 }

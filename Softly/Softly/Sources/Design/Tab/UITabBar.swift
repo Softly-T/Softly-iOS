@@ -1,18 +1,53 @@
-//
-//  UITabBar.swift
-//  Softly
-//
-//  Created by 노가현 on 3/26/24.
-//
-
 import SwiftUI
 
-struct UITabBar: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+public extension UITabBar {
+    static func hideTabBar(animated: Bool = false) {
+        DispatchQueue.main.async {
+            let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+            windowScene?.windows.first(where: { $0.isKeyWindow })?.subviews.forEach({ (view) in
+                if let view = view as? UITabBar {
+                    view.setIsHidden(true, animated: animated)
+                }
+            })
+        }
     }
-}
 
-#Preview {
-    UITabBar()
+    private func setIsHidden(_ hidden: Bool, animated: Bool) {
+        let isViewHidden = self.isHidden
+
+        if animated {
+            if self.isHidden && !hidden {
+                self.isHidden = false
+                self.frame.origin.y = UIScreen.main.bounds.height + 200
+            }
+
+            if isViewHidden && !hidden {
+                self.alpha = 0.0
+            }
+
+            UIView.animate(withDuration: 0.8, animations: {
+                self.alpha = hidden ? 0.0 : 1.0
+            })
+            UIView.animate(withDuration: 0.6) {
+                if !isViewHidden && hidden {
+                    self.frame.origin.y = UIScreen.main.bounds.height + 200
+                } else if isViewHidden && !hidden {
+                    self.frame.origin.y = UIScreen.main.bounds.height - self.frame.height
+                }
+            } completion: { _ in
+                if hidden && !self.isHidden {
+                    self.isHidden = true
+                }
+            }
+        } else {
+            if !isViewHidden && hidden {
+                self.frame.origin.y = UIScreen.main.bounds.height + 200
+            } else if isViewHidden && !hidden {
+                self.frame.origin.y = UIScreen.main.bounds.height - self.frame.height
+            }
+            self.isHidden = hidden
+            self.alpha = 1
+        }
+    }
+
 }

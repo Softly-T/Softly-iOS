@@ -157,7 +157,7 @@ struct DetailsDesView: View {
                                                 .padding(.trailing, 12)
                                         }
                                         
-                                            
+                                        
                                         Image(heartList[selectedIndex])
                                             .onTapGesture {
                                                 selectedIndex = selectedIndex == 0 ? 1 : 0
@@ -356,19 +356,19 @@ struct DetailsDesView: View {
                         
                         Button {
                             if popupreportlist.contains(true) {
-                                    popupreportsubmission.toggle()
-                                }
+                                popupreportsubmission.toggle()
+                            }
                         }label: {
                             Text("신고하기")
-                                    .SoftlyFont(.h4)
-                                    .foregroundStyle(.white)
-                                    .padding(.vertical, 16)
-                                    .padding(.horizontal, 147)
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .foregroundStyle(popupreportlist.contains(true) ? .primary900 : .gray300)
-                                    )
-                                    .padding(.top, 46)
+                                .SoftlyFont(.h4)
+                                .foregroundStyle(.white)
+                                .padding(.vertical, 16)
+                                .padding(.horizontal, 147)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .foregroundStyle(popupreportlist.contains(true) ? .primary900 : .gray300)
+                                )
+                                .padding(.top, 46)
                         }
                         .padding(.leading, 20)
                         
@@ -386,35 +386,35 @@ struct DetailsDesView: View {
                         .backgroundColor(.black.opacity(0.5))
                 }
                 .popup(isPresented: $popupreportsubmission) {
-                        VStack(alignment: .leading, spacing: 0){
-                            Text("이 타래를 신고하시겠어요?")
-                                .SoftlyFont(.p2, color: .gray900)
-                                .padding(.top, 24)
-                            
-                            HStack(spacing: 0) {
-                                Spacer()
-                                Button {
-                                    popupreportsubmission.toggle()
-                                }label: {
-                                    Text("취소")
-                                        .SoftlyFont(.p2, color: .gray200)
-                                        .padding(.trailing, 36)
-                                }
-                                
-                                Button {
-                                    popupreportsubmission.toggle()
-                                    popupreport.toggle()
-                                    popupfirst.toggle()
-                                }label: {
-                                    Text("확인")
-                                        .SoftlyFont(.p2, color: .primary900)
-                                        .padding(.trailing, 24)
-                                }
-                                
-                            }
-                            .padding(.top, 38)
-                            
+                    VStack(alignment: .leading, spacing: 0){
+                        Text("이 타래를 신고하시겠어요?")
+                            .SoftlyFont(.p2, color: .gray900)
+                            .padding(.top, 24)
+                        
+                        HStack(spacing: 0) {
                             Spacer()
+                            Button {
+                                popupreportsubmission.toggle()
+                            }label: {
+                                Text("취소")
+                                    .SoftlyFont(.p2, color: .gray200)
+                                    .padding(.trailing, 36)
+                            }
+                            
+                            Button {
+                                popupreportsubmission.toggle()
+                                popupreport.toggle()
+                                popupfirst.toggle()
+                            }label: {
+                                Text("확인")
+                                    .SoftlyFont(.p2, color: .primary900)
+                                    .padding(.trailing, 24)
+                            }
+                            
+                        }
+                        .padding(.top, 38)
+                        
+                        Spacer()
                     }
                     .padding(.leading, 20)
                     .background(Color.white)
@@ -429,7 +429,7 @@ struct DetailsDesView: View {
                         .closeOnTapOutside(true)
                         .backgroundColor(.black.opacity(0.5))
                 }
-
+                
                 
             }
         }
@@ -459,18 +459,18 @@ struct DetailsDesView: View {
     }
     struct BorderHstackView<Content: View>: View {
         let content: () -> Content
-     
+        
         init(@ViewBuilder content: @escaping () ->  Content) {
             self.content = content
         }
-     
+        
         var body: some View {
             HStack {
                 content()
             }
         }
     }
-     
+    
 }
 
 

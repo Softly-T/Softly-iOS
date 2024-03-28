@@ -6,3 +6,7 @@
 //
 
 import Foundation
+class SearchViewModel: ObservableObject {
+    @Published var search: String = ""
+    @Published var selectedButton: Int?
+}

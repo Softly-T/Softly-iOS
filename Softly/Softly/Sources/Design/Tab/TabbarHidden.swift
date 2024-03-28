@@ -1,18 +1,12 @@
-//
-//  TabbarHidden.swift
-//  Softly
-//
-//  Created by 노가현 on 3/26/24.
-//
-
 import SwiftUI
 
-struct TabbarHidden: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct TabbarHiddenKey: EnvironmentKey {
+    static var defaultValue: Binding<Bool> = .constant(false)
 }
 
-#Preview {
-    TabbarHidden()
+public extension EnvironmentValues {
+    var tabbarHidden: Binding<Bool> {
+        get { self[TabbarHiddenKey.self] }
+        set { self[TabbarHiddenKey.self] = newValue }
+    }
 }
